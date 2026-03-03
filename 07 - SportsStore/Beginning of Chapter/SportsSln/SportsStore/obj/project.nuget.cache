@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ca0fIIW6OgY=",
+  "dgSpecHash": "R+8TyqcKKYM=",
   "success": true,
-  "projectFilePath": "/Users/joyfatungase/Downloads/fs-lab-assignment-sportstore-71757-master/07 - SportsStore/Beginning of Chapter/SportsSln/SportsStore/SportsStore.csproj",
-  "expectedPackageFiles": [
-    "/Users/joyfatungase/.nuget/packages/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
-    "/Users/joyfatungase/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
-    "/Users/joyfatungase/.nuget/packages/microsoft.netcore.app.host.osx-arm64/6.0.36/microsoft.netcore.app.host.osx-arm64.6.0.36.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\yinka\\Downloads\\fs-lab-assignment-sportstore-71757-master\\fs-lab-assignment-sportstore-71757-master\\07 - SportsStore\\Beginning of Chapter\\SportsSln\\SportsStore\\SportsStore.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
