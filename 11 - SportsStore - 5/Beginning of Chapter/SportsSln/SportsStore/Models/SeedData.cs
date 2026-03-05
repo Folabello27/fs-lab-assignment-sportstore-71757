@@ -8,10 +8,6 @@ namespace SportsStore.Models {
             StoreDbContext context = app.ApplicationServices
                 .CreateScope().ServiceProvider.GetRequiredService<StoreDbContext>();
 
-            // For development with SQLite, ensure the database and schema exist.
-            // Using EnsureCreated() here avoids migration complications in the
-            // assignment starter project. For production or when using migrations
-            // prefer context.Database.Migrate().
             context.Database.EnsureCreated();
 
             if (!context.Products.Any()) {

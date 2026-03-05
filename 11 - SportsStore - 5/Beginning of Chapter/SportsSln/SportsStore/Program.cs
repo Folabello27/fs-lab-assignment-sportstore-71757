@@ -1,13 +1,21 @@
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 using SportsStore.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+
+Log.Logger = new LoggerConfiguration()
+    .ReadFrom.Configuration(builder.Configuration)
+    .CreateLogger();
+
+builder.Host.UseSerilog();
 
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<StoreDbContext>(opts => {
     opts.UseSqlite(
-        builder.Configuration["ConnectionStrings:SportsStoreConnection"]);
+        builder.Configuration.GetConnectionString("SportsStoreConnection")
+        ?? throw new InvalidOperationException("Connection string 'SportsStoreConnection' was not found."));
 });
 
 builder.Services.AddScoped<IStoreRepository, EFStoreRepository>();
@@ -20,30 +28,50 @@ builder.Services.AddScoped<Cart>(sp => SessionCart.GetCart(sp));
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddServerSideBlazor();
 
-var app = builder.Build();
+try {
+    Log.Information("Starting SportsStore application");
 
-app.UseStaticFiles();
-app.UseSession();
+    var app = builder.Build();
 
-app.MapControllerRoute("catpage",
-    "{category}/Page{productPage:int}",
-    new { Controller = "Home", action = "Index" });
+    app.UseSerilogRequestLogging();
+    app.Use(async (context, next) => {
+        try {
+            await next();
+        } catch (Exception ex) {
+            Log.ForContext("RequestPath", context.Request.Path.Value)
+                .Error(ex, "Unhandled exception while processing request");
+            throw;
+        }
+    });
 
-app.MapControllerRoute("page", "Page{productPage:int}",
-    new { Controller = "Home", action = "Index", productPage = 1 });
+    app.UseStaticFiles();
+    app.UseSession();
 
-app.MapControllerRoute("category", "{category}",
-    new { Controller = "Home", action = "Index", productPage = 1 });
+    app.MapControllerRoute("catpage",
+        "{category}/Page{productPage:int}",
+        new { Controller = "Home", action = "Index" });
 
-app.MapControllerRoute("pagination",
-    "Products/Page{productPage}",
-    new { Controller = "Home", action = "Index", productPage = 1 });
+    app.MapControllerRoute("page", "Page{productPage:int}",
+        new { Controller = "Home", action = "Index", productPage = 1 });
 
-app.MapDefaultControllerRoute();
-app.MapRazorPages();
-app.MapBlazorHub();
-app.MapFallbackToPage("/admin/{*catchall}", "/Admin/Index");
+    app.MapControllerRoute("category", "{category}",
+        new { Controller = "Home", action = "Index", productPage = 1 });
 
-SeedData.EnsurePopulated(app);
+    app.MapControllerRoute("pagination",
+        "Products/Page{productPage}",
+        new { Controller = "Home", action = "Index", productPage = 1 });
 
-app.Run();
+    app.MapDefaultControllerRoute();
+    app.MapRazorPages();
+    app.MapBlazorHub();
+    app.MapFallbackToPage("/admin/{*catchall}", "/Admin/Index");
+
+    SeedData.EnsurePopulated(app);
+
+    Log.Information("SportsStore configured and ready");
+    app.Run();
+} catch (Exception ex) {
+    Log.Fatal(ex, "SportsStore terminated unexpectedly during startup");
+} finally {
+    Log.CloseAndFlush();
+}
