@@ -1,0 +1,10 @@
+@model int
+
+<div class="text-center">
+    <h2>Payment Cancelled</h2>
+    <p>Your payment was cancelled for order #@Model.</p>
+    <p>No confirmation was issued. You can return to checkout and try again.</p>
+    <a class="btn btn-primary" asp-action="Checkout">Back to Checkout</a>
+    <a class="btn btn-secondary" asp-controller="Home" asp-action="Index">Return to Store</a>
+</div>
+

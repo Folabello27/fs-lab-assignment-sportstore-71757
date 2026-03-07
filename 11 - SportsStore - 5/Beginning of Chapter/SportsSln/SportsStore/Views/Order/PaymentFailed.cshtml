@@ -1,0 +1,22 @@
+@model int?
+@{
+    var customMessage = ViewData["Message"] as string;
+}
+
+<div class="text-center">
+    <h2>Payment Failed</h2>
+    @if (Model.HasValue) {
+        <p>We could not confirm payment for order #@Model.</p>
+    } else {
+        <p>We could not confirm your payment.</p>
+    }
+
+    @if (!string.IsNullOrWhiteSpace(customMessage)) {
+        <p class="text-danger">@customMessage</p>
+    }
+
+    <p>Please retry checkout with Stripe test payment details.</p>
+    <a class="btn btn-primary" asp-action="Checkout">Try Again</a>
+    <a class="btn btn-secondary" asp-controller="Home" asp-action="Index">Return to Store</a>
+</div>
+
