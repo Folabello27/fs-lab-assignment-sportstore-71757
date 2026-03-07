@@ -9,6 +9,7 @@ namespace SportsStore.Models {
                 .CreateScope().ServiceProvider.GetRequiredService<StoreDbContext>();
 
             context.Database.EnsureCreated();
+            EnsureOrderPaymentColumns(context);
 
             if (!context.Products.Any()) {
                 context.Products.AddRange(
@@ -58,6 +59,41 @@ namespace SportsStore.Models {
                     }
                 );
                 context.SaveChanges();
+            }
+        }
+
+        private static void EnsureOrderPaymentColumns(StoreDbContext context) {
+            using var connection = context.Database.GetDbConnection();
+            connection.Open();
+
+            var columns = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+            using (var command = connection.CreateCommand()) {
+                command.CommandText = "PRAGMA table_info('Orders');";
+                using var reader = command.ExecuteReader();
+                while (reader.Read()) {
+                    columns.Add(reader.GetString(1));
+                }
+            }
+
+            var alterStatements = new List<string>();
+            if (!columns.Contains("PaymentStatus")) {
+                alterStatements.Add("ALTER TABLE Orders ADD COLUMN PaymentStatus TEXT NOT NULL DEFAULT 'Pending';");
+            }
+            if (!columns.Contains("StripeCheckoutSessionId")) {
+                alterStatements.Add("ALTER TABLE Orders ADD COLUMN StripeCheckoutSessionId TEXT NULL;");
+            }
+            if (!columns.Contains("StripePaymentIntentId")) {
+                alterStatements.Add("ALTER TABLE Orders ADD COLUMN StripePaymentIntentId TEXT NULL;");
+            }
+            if (!columns.Contains("PaymentConfirmedAtUtc")) {
+                alterStatements.Add("ALTER TABLE Orders ADD COLUMN PaymentConfirmedAtUtc TEXT NULL;");
+            }
+            if (!columns.Contains("PaymentFailureReason")) {
+                alterStatements.Add("ALTER TABLE Orders ADD COLUMN PaymentFailureReason TEXT NULL;");
+            }
+
+            foreach (var sql in alterStatements) {
+                context.Database.ExecuteSqlRaw(sql);
             }
         }
     }

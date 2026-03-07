@@ -13,6 +13,14 @@ namespace SportsStore.Models {
                             .Include(o => o.Lines)
                             .ThenInclude(l => l.Product);
 
+        public Order? GetOrder(int orderId) {
+            return Orders.FirstOrDefault(o => o.OrderID == orderId);
+        }
+
+        public Order? GetOrderByStripeSessionId(string sessionId) {
+            return Orders.FirstOrDefault(o => o.StripeCheckoutSessionId == sessionId);
+        }
+
         public void SaveOrder(Order order) {
             context.AttachRange(order.Lines.Select(l => l.Product));
             if (order.OrderID == 0) {

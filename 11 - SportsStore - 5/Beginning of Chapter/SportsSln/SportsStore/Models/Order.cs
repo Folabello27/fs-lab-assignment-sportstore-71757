@@ -33,5 +33,20 @@ namespace SportsStore.Models {
 
         [BindNever]
         public bool Shipped { get; set; }
+
+        [BindNever]
+        public string PaymentStatus { get; set; } = "Pending";
+
+        [BindNever]
+        public string? StripeCheckoutSessionId { get; set; }
+
+        [BindNever]
+        public string? StripePaymentIntentId { get; set; }
+
+        [BindNever]
+        public DateTime? PaymentConfirmedAtUtc { get; set; }
+
+        [BindNever]
+        public string? PaymentFailureReason { get; set; }
     }
 }
