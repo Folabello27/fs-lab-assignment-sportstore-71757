@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Restore
+        run: dotnet restore "11 - SportsStore - 5/Beginning of Chapter/SportsSln/SportsSln.sln"
+
+      - name: Build
+        run: dotnet build "11 - SportsStore - 5/Beginning of Chapter/SportsSln/SportsSln.sln" --configuration Release --no-restore
+
+      - name: Test
+        run: dotnet test "11 - SportsStore - 5/Beginning of Chapter/SportsSln/SportsSln.sln" --configuration Release --no-build --logger "trx;LogFileName=test-results.trx" --results-directory "11 - SportsStore - 5/Beginning of Chapter/SportsSln/TestResults"
+
+      - name: Upload Test Results Artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: 11 - SportsStore - 5/Beginning of Chapter/SportsSln/TestResults/*.trx
+
+      - name: Publish Test Report
+        if: always()
+        uses: dorny/test-reporter@v1
+        with:
+          name: dotnet-tests
+          path: 11 - SportsStore - 5/Beginning of Chapter/SportsSln/TestResults/*.trx
+          reporter: dotnet-trx

@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="c3771646-bb56-4079-9d6c-9610be0665b5" name="yinka@DORSET 2026-03-09 03:54:04" runUser="DORSET\yinka" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-03-09T03:54:04.3166289-07:00" queuing="2026-03-09T03:54:04.3166293-07:00" start="2026-03-09T03:53:46.5633947-07:00" finish="2026-03-09T03:54:07.4907524-07:00" />
+  <TestSettings name="default" id="7a2dd88d-42aa-4fff-a1cb-82236ae36c30">
+    <Deployment runDeploymentRoot="yinka_DORSET_2026-03-09_03_54_04" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="ff4be9b2-6727-4924-b34f-2373d3f88d59" testId="463c213b-bc8f-4c8d-3f03-f6c84f1ba9ea" testName="SportsStore.Tests.PageLinkTagHelperTests.Can_Generate_Page_Links" computerName="DORSET" duration="00:00:00.1309216" startTime="2026-03-09T03:54:07.0402949-07:00" endTime="2026-03-09T03:54:07.1693895-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ff4be9b2-6727-4924-b34f-2373d3f88d59" />
+    <UnitTestResult executionId="b739eeab-1433-43cf-9d63-8cac071a06f9" testId="7ba9e185-12cb-d99a-9ea1-45bb2115a5fa" testName="SportsStore.Tests.CartPageTests.Can_Update_Cart" computerName="DORSET" duration="00:00:00.0141420" startTime="2026-03-09T03:54:06.9855012-07:00" endTime="2026-03-09T03:54:06.9991878-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b739eeab-1433-43cf-9d63-8cac071a06f9" />
+    <UnitTestResult executionId="94d57df6-b7e5-4197-b3c7-1232f32ac642" testId="b39b6c2a-774e-7493-ee65-0aaa09431e5d" testName="SportsStore.Tests.HomeControllerTests.Can_Use_Repository" computerName="DORSET" duration="00:00:00.0206270" startTime="2026-03-09T03:54:06.9462737-07:00" endTime="2026-03-09T03:54:06.9619527-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="94d57df6-b7e5-4197-b3c7-1232f32ac642" />
+    <UnitTestResult executionId="d4e8db36-18e5-436f-920c-b59667ef7e5b" testId="633f6029-062b-e38b-d7d9-69dc3374aa36" testName="SportsStore.Tests.NavigationMenuViewComponentTests.Indicates_Selected_Category" computerName="DORSET" duration="00:00:00.0101810" startTime="2026-03-09T03:54:07.2374616-07:00" endTime="2026-03-09T03:54:07.2474567-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d4e8db36-18e5-436f-920c-b59667ef7e5b" />
+    <UnitTestResult executionId="c9c824cb-5118-4d6c-8b03-58df5d7dbcdc" testId="888de4fa-7580-b7bd-e1a7-61eb3a6f19f4" testName="SportsStore.Tests.OrderControllerTests.Cannot_Checkout_Invalid_ShippingDetails" computerName="DORSET" duration="00:00:00.0014610" startTime="2026-03-09T03:54:06.9577754-07:00" endTime="2026-03-09T03:54:06.9590360-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c9c824cb-5118-4d6c-8b03-58df5d7dbcdc" />
+    <UnitTestResult executionId="72439864-5782-4335-910b-c25ab2339b98" testId="caa4a50a-b808-cd22-ff62-05ad60263d71" testName="SportsStore.Tests.OrderControllerTests.Can_Checkout_And_Redirect_To_Stripe" computerName="DORSET" duration="00:00:02.6711136" startTime="2026-03-09T03:54:04.3058764-07:00" endTime="2026-03-09T03:54:06.9327499-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="72439864-5782-4335-910b-c25ab2339b98" />
+    <UnitTestResult executionId="11500cd0-267a-4cd0-9dc2-a0d138c9f655" testId="7fe9a767-c7a9-da4e-3fb9-30bc69e0142f" testName="SportsStore.Tests.CartTests.Can_Remove_Line" computerName="DORSET" duration="00:00:00.0343505" startTime="2026-03-09T03:54:04.2779296-07:00" endTime="2026-03-09T03:54:04.2782875-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="11500cd0-267a-4cd0-9dc2-a0d138c9f655" />
+    <UnitTestResult executionId="b86ea98e-2b97-4ab3-9350-8bb7cf5ffbc0" testId="d806e124-c089-bf0c-69c7-d08a9a2fb936" testName="SportsStore.Tests.CartTests.Can_Clear_Contents" computerName="DORSET" duration="00:00:00.0023746" startTime="2026-03-09T03:54:04.2966319-07:00" endTime="2026-03-09T03:54:04.2967872-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b86ea98e-2b97-4ab3-9350-8bb7cf5ffbc0" />
+    <UnitTestResult executionId="fd908f56-7d31-48ff-8268-982a6241fd97" testId="16146c4f-1989-7fb7-6d00-e890de62ac14" testName="SportsStore.Tests.HomeControllerTests.Can_Paginate" computerName="DORSET" duration="00:00:00.0234931" startTime="2026-03-09T03:54:07.0245643-07:00" endTime="2026-03-09T03:54:07.0332288-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fd908f56-7d31-48ff-8268-982a6241fd97" />
+    <UnitTestResult executionId="c050d98f-e6f8-4af6-bbd7-dcf1eb69f152" testId="d4d56918-3316-6e6d-84d2-1a7a421b63ba" testName="SportsStore.Tests.CartTests.Can_Add_Quantity_For_Existing_Lines" computerName="DORSET" duration="00:00:03.1697776" startTime="2026-03-09T03:54:00.9966509-07:00" endTime="2026-03-09T03:54:04.0445933-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c050d98f-e6f8-4af6-bbd7-dcf1eb69f152" />
+    <UnitTestResult executionId="1c822675-2354-4c19-9eb9-f8397d712f4e" testId="23eca694-f3e8-cb68-a264-5fd501f64c3e" testName="SportsStore.Tests.OrderControllerTests.Cannot_Checkout_Empty_Cart" computerName="DORSET" duration="00:00:00.0173855" startTime="2026-03-09T03:54:06.9419713-07:00" endTime="2026-03-09T03:54:06.9567990-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1c822675-2354-4c19-9eb9-f8397d712f4e" />
+    <UnitTestResult executionId="b8fc4776-df19-4f12-8f22-0d4e2384c569" testId="9bba611e-a08f-0c04-c1d3-202243e4358e" testName="SportsStore.Tests.CartTests.Can_Add_New_Lines" computerName="DORSET" duration="00:00:00.0388532" startTime="2026-03-09T03:54:04.2837451-07:00" endTime="2026-03-09T03:54:04.2838696-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b8fc4776-df19-4f12-8f22-0d4e2384c569" />
+    <UnitTestResult executionId="8194d162-7c80-4c26-9434-cfce152ae4bd" testId="3eec47fc-df5c-bd94-9123-7315973387c7" testName="SportsStore.Tests.HomeControllerTests.Can_Send_Pagination_View_Model" computerName="DORSET" duration="00:00:00.0033716" startTime="2026-03-09T03:54:06.9970754-07:00" endTime="2026-03-09T03:54:07.0009995-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8194d162-7c80-4c26-9434-cfce152ae4bd" />
+    <UnitTestResult executionId="a32e2fd1-bfbe-4108-8a6f-e60648e62ac6" testId="269fcb27-4c46-43b5-5090-02311cef1e29" testName="SportsStore.Tests.HomeControllerTests.Can_Filter_Products" computerName="DORSET" duration="00:00:06.1105590" startTime="2026-03-09T03:54:01.0329749-07:00" endTime="2026-03-09T03:54:06.9426816-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a32e2fd1-bfbe-4108-8a6f-e60648e62ac6" />
+    <UnitTestResult executionId="f1027f40-2f87-4328-8f25-30124bcd3462" testId="b8081a28-a2b5-3c63-d39e-453bbe530d4c" testName="SportsStore.Tests.CartPageTests.Can_Load_Cart" computerName="DORSET" duration="00:00:00.0227970" startTime="2026-03-09T03:54:06.9612356-07:00" endTime="2026-03-09T03:54:06.9843366-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f1027f40-2f87-4328-8f25-30124bcd3462" />
+    <UnitTestResult executionId="091ba2b2-d615-4363-9237-81ec3f1f6431" testId="59f2878d-9ff7-2aab-40df-d409445d4121" testName="SportsStore.Tests.CartTests.Calculate_Cart_Total" computerName="DORSET" duration="00:00:00.0288180" startTime="2026-03-09T03:54:04.2832097-07:00" endTime="2026-03-09T03:54:04.2833699-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="091ba2b2-d615-4363-9237-81ec3f1f6431" />
+    <UnitTestResult executionId="d4843cda-5259-497c-a517-4f6fb69ff3db" testId="a26937d7-a04b-177a-a91a-07c40d5006e7" testName="SportsStore.Tests.NavigationMenuViewComponentTests.Can_Select_Categories" computerName="DORSET" duration="00:00:00.2369104" startTime="2026-03-09T03:54:07.0004883-07:00" endTime="2026-03-09T03:54:07.2370045-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d4843cda-5259-497c-a517-4f6fb69ff3db" />
+    <UnitTestResult executionId="789ff3c3-ece6-4dec-ad3f-67db5b254219" testId="e042c721-696d-e76d-2c09-a2821e58c361" testName="SportsStore.Tests.HomeControllerTests.Generate_Category_Specific_Product_Count" computerName="DORSET" duration="00:00:00.0331918" startTime="2026-03-09T03:54:06.9626358-07:00" endTime="2026-03-09T03:54:06.9962304-07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="789ff3c3-ece6-4dec-ad3f-67db5b254219" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="SportsStore.Tests.HomeControllerTests.Can_Filter_Products" storage="c:\users\yinka\riderprojects\fs-lab-assignment-sportstore-71757\11 - sportsstore - 5\beginning of chapter\sportssln\sportsstore.tests\bin\release\net10.0\sportsstore.tests.dll" id="269fcb27-4c46-43b5-5090-02311cef1e29">
+      <Execution id="a32e2fd1-bfbe-4108-8a6f-e60648e62ac6" />
+      <TestMethod codeBase="C:\Users\yinka\RiderProjects\fs-lab-assignment-sportstore-71757\11 - SportsStore - 5\Beginning of Chapter\SportsSln\SportsStore.Tests\bin\Release\net10.0\SportsStore.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SportsStore.Tests.HomeControllerTests" name="Can_Filter_Products" />
+    </UnitTest>
+    <UnitTest name="SportsStore.Tests.CartTests.Can_Add_New_Lines" storage="c:\users\yinka\riderprojects\fs-lab-assignment-sportstore-71757\11 - sportsstore - 5\beginning of chapter\sportssln\sportsstore.tests\bin\release\net10.0\sportsstore.tests.dll" id="9bba611e-a08f-0c04-c1d3-202243e4358e">
+      <Execution id="b8fc4776-df19-4f12-8f22-0d4e2384c569" />
+      <TestMethod codeBase="C:\Users\yinka\RiderProjects\fs-lab-assignment-sportstore-71757\11 - SportsStore - 5\Beginning of Chapter\SportsSln\SportsStore.Tests\bin\Release\net10.0\SportsStore.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SportsStore.Tests.CartTests" name="Can_Add_New_Lines" />
+    </UnitTest>
+    <UnitTest name="SportsStore.Tests.CartTests.Calculate_Cart_Total" storage="c:\users\yinka\riderprojects\fs-lab-assignment-sportstore-71757\11 - sportsstore - 5\beginning of chapter\sportssln\sportsstore.tests\bin\release\net10.0\sportsstore.tests.dll" id="59f2878d-9ff7-2aab-40df-d409445d4121">
+      <Execution id="091ba2b2-d615-4363-9237-81ec3f1f6431" />
+      <TestMethod codeBase="C:\Users\yinka\RiderProjects\fs-lab-assignment-sportstore-71757\11 - SportsStore - 5\Beginning of Chapter\SportsSln\SportsStore.Tests\bin\Release\net10.0\SportsStore.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SportsStore.Tests.CartTests" name="Calculate_Cart_Total" />
+    </UnitTest>
+    <UnitTest name="SportsStore.Tests.CartPageTests.Can_Load_Cart" storage="c:\users\yinka\riderprojects\fs-lab-assignment-sportstore-71757\11 - sportsstore - 5\beginning of chapter\sportssln\sportsstore.tests\bin\release\net10.0\sportsstore.tests.dll" id="b8081a28-a2b5-3c63-d39e-453bbe530d4c">
+      <Execution id="f1027f40-2f87-4328-8f25-30124bcd3462" />
+      <TestMethod codeBase="C:\Users\yinka\RiderProjects\fs-lab-assignment-sportstore-71757\11 - SportsStore - 5\Beginning of Chapter\SportsSln\SportsStore.Tests\bin\Release\net10.0\SportsStore.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SportsStore.Tests.CartPageTests" name="Can_Load_Cart" />
+    </UnitTest>
+    <UnitTest name="SportsStore.Tests.PageLinkTagHelperTests.Can_Generate_Page_Links" storage="c:\users\yinka\riderprojects\fs-lab-assignment-sportstore-71757\11 - sportsstore - 5\beginning of chapter\sportssln\sportsstore.tests\bin\release\net10.0\sportsstore.tests.dll" id="463c213b-bc8f-4c8d-3f03-f6c84f1ba9ea">
+      <Execution id="ff4be9b2-6727-4924-b34f-2373d3f88d59" />
+      <TestMethod codeBase="C:\Users\yinka\RiderProjects\fs-lab-assignment-sportstore-71757\11 - SportsStore - 5\Beginning of Chapter\SportsSln\SportsStore.Tests\bin\Release\net10.0\SportsStore.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SportsStore.Tests.PageLinkTagHelperTests" name="Can_Generate_Page_Links" />
+    </UnitTest>
+    <UnitTest name="SportsStore.Tests.OrderControllerTests.Cannot_Checkout_Invalid_ShippingDetails" storage="c:\users\yinka\riderprojects\fs-lab-assignment-sportstore-71757\11 - sportsstore - 5\beginning of chapter\sportssln\sportsstore.tests\bin\release\net10.0\sportsstore.tests.dll" id="888de4fa-7580-b7bd-e1a7-61eb3a6f19f4">
+      <Execution id="c9c824cb-5118-4d6c-8b03-58df5d7dbcdc" />
+      <TestMethod codeBase="C:\Users\yinka\RiderProjects\fs-lab-assignment-sportstore-71757\11 - SportsStore - 5\Beginning of Chapter\SportsSln\SportsStore.Tests\bin\Release\net10.0\SportsStore.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SportsStore.Tests.OrderControllerTests" name="Cannot_Checkout_Invalid_ShippingDetails" />
+    </UnitTest>
+    <UnitTest name="SportsStore.Tests.HomeControllerTests.Generate_Category_Specific_Product_Count" storage="c:\users\yinka\riderprojects\fs-lab-assignment-sportstore-71757\11 - sportsstore - 5\beginning of chapter\sportssln\sportsstore.tests\bin\release\net10.0\sportsstore.tests.dll" id="e042c721-696d-e76d-2c09-a2821e58c361">
+      <Execution id="789ff3c3-ece6-4dec-ad3f-67db5b254219" />
+      <TestMethod codeBase="C:\Users\yinka\RiderProjects\fs-lab-assignment-sportstore-71757\11 - SportsStore - 5\Beginning of Chapter\SportsSln\SportsStore.Tests\bin\Release\net10.0\SportsStore.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SportsStore.Tests.HomeControllerTests" name="Generate_Category_Specific_Product_Count" />
+    </UnitTest>
+    <UnitTest name="SportsStore.Tests.NavigationMenuViewComponentTests.Indicates_Selected_Category" storage="c:\users\yinka\riderprojects\fs-lab-assignment-sportstore-71757\11 - sportsstore - 5\beginning of chapter\sportssln\sportsstore.tests\bin\release\net10.0\sportsstore.tests.dll" id="633f6029-062b-e38b-d7d9-69dc3374aa36">
+      <Execution id="d4e8db36-18e5-436f-920c-b59667ef7e5b" />
+      <TestMethod codeBase="C:\Users\yinka\RiderProjects\fs-lab-assignment-sportstore-71757\11 - SportsStore - 5\Beginning of Chapter\SportsSln\SportsStore.Tests\bin\Release\net10.0\SportsStore.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SportsStore.Tests.NavigationMenuViewComponentTests" name="Indicates_Selected_Category" />
+    </UnitTest>
+    <UnitTest name="SportsStore.Tests.HomeControllerTests.Can_Use_Repository" storage="c:\users\yinka\riderprojects\fs-lab-assignment-sportstore-71757\11 - sportsstore - 5\beginning of chapter\sportssln\sportsstore.tests\bin\release\net10.0\sportsstore.tests.dll" id="b39b6c2a-774e-7493-ee65-0aaa09431e5d">
+      <Execution id="94d57df6-b7e5-4197-b3c7-1232f32ac642" />
+      <TestMethod codeBase="C:\Users\yinka\RiderProjects\fs-lab-assignment-sportstore-71757\11 - SportsStore - 5\Beginning of Chapter\SportsSln\SportsStore.Tests\bin\Release\net10.0\SportsStore.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SportsStore.Tests.HomeControllerTests" name="Can_Use_Repository" />
+    </UnitTest>
+    <UnitTest name="SportsStore.Tests.HomeControllerTests.Can_Send_Pagination_View_Model" storage="c:\users\yinka\riderprojects\fs-lab-assignment-sportstore-71757\11 - sportsstore - 5\beginning of chapter\sportssln\sportsstore.tests\bin\release\net10.0\sportsstore.tests.dll" id="3eec47fc-df5c-bd94-9123-7315973387c7">
+      <Execution id="8194d162-7c80-4c26-9434-cfce152ae4bd" />
+      <TestMethod codeBase="C:\Users\yinka\RiderProjects\fs-lab-assignment-sportstore-71757\11 - SportsStore - 5\Beginning of Chapter\SportsSln\SportsStore.Tests\bin\Release\net10.0\SportsStore.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SportsStore.Tests.HomeControllerTests" name="Can_Send_Pagination_View_Model" />
+    </UnitTest>
+    <UnitTest name="SportsStore.Tests.CartTests.Can_Add_Quantity_For_Existing_Lines" storage="c:\users\yinka\riderprojects\fs-lab-assignment-sportstore-71757\11 - sportsstore - 5\beginning of chapter\sportssln\sportsstore.tests\bin\release\net10.0\sportsstore.tests.dll" id="d4d56918-3316-6e6d-84d2-1a7a421b63ba">
+      <Execution id="c050d98f-e6f8-4af6-bbd7-dcf1eb69f152" />
+      <TestMethod codeBase="C:\Users\yinka\RiderProjects\fs-lab-assignment-sportstore-71757\11 - SportsStore - 5\Beginning of Chapter\SportsSln\SportsStore.Tests\bin\Release\net10.0\SportsStore.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SportsStore.Tests.CartTests" name="Can_Add_Quantity_For_Existing_Lines" />
+    </UnitTest>
+    <UnitTest name="SportsStore.Tests.CartPageTests.Can_Update_Cart" storage="c:\users\yinka\riderprojects\fs-lab-assignment-sportstore-71757\11 - sportsstore - 5\beginning of chapter\sportssln\sportsstore.tests\bin\release\net10.0\sportsstore.tests.dll" id="7ba9e185-12cb-d99a-9ea1-45bb2115a5fa">
+      <Execution id="b739eeab-1433-43cf-9d63-8cac071a06f9" />
+      <TestMethod codeBase="C:\Users\yinka\RiderProjects\fs-lab-assignment-sportstore-71757\11 - SportsStore - 5\Beginning of Chapter\SportsSln\SportsStore.Tests\bin\Release\net10.0\SportsStore.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SportsStore.Tests.CartPageTests" name="Can_Update_Cart" />
+    </UnitTest>
+    <UnitTest name="SportsStore.Tests.OrderControllerTests.Cannot_Checkout_Empty_Cart" storage="c:\users\yinka\riderprojects\fs-lab-assignment-sportstore-71757\11 - sportsstore - 5\beginning of chapter\sportssln\sportsstore.tests\bin\release\net10.0\sportsstore.tests.dll" id="23eca694-f3e8-cb68-a264-5fd501f64c3e">
+      <Execution id="1c822675-2354-4c19-9eb9-f8397d712f4e" />
+      <TestMethod codeBase="C:\Users\yinka\RiderProjects\fs-lab-assignment-sportstore-71757\11 - SportsStore - 5\Beginning of Chapter\SportsSln\SportsStore.Tests\bin\Release\net10.0\SportsStore.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SportsStore.Tests.OrderControllerTests" name="Cannot_Checkout_Empty_Cart" />
+    </UnitTest>
+    <UnitTest name="SportsStore.Tests.OrderControllerTests.Can_Checkout_And_Redirect_To_Stripe" storage="c:\users\yinka\riderprojects\fs-lab-assignment-sportstore-71757\11 - sportsstore - 5\beginning of chapter\sportssln\sportsstore.tests\bin\release\net10.0\sportsstore.tests.dll" id="caa4a50a-b808-cd22-ff62-05ad60263d71">
+      <Execution id="72439864-5782-4335-910b-c25ab2339b98" />
+      <TestMethod codeBase="C:\Users\yinka\RiderProjects\fs-lab-assignment-sportstore-71757\11 - SportsStore - 5\Beginning of Chapter\SportsSln\SportsStore.Tests\bin\Release\net10.0\SportsStore.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SportsStore.Tests.OrderControllerTests" name="Can_Checkout_And_Redirect_To_Stripe" />
+    </UnitTest>
+    <UnitTest name="SportsStore.Tests.NavigationMenuViewComponentTests.Can_Select_Categories" storage="c:\users\yinka\riderprojects\fs-lab-assignment-sportstore-71757\11 - sportsstore - 5\beginning of chapter\sportssln\sportsstore.tests\bin\release\net10.0\sportsstore.tests.dll" id="a26937d7-a04b-177a-a91a-07c40d5006e7">
+      <Execution id="d4843cda-5259-497c-a517-4f6fb69ff3db" />
+      <TestMethod codeBase="C:\Users\yinka\RiderProjects\fs-lab-assignment-sportstore-71757\11 - SportsStore - 5\Beginning of Chapter\SportsSln\SportsStore.Tests\bin\Release\net10.0\SportsStore.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SportsStore.Tests.NavigationMenuViewComponentTests" name="Can_Select_Categories" />
+    </UnitTest>
+    <UnitTest name="SportsStore.Tests.CartTests.Can_Clear_Contents" storage="c:\users\yinka\riderprojects\fs-lab-assignment-sportstore-71757\11 - sportsstore - 5\beginning of chapter\sportssln\sportsstore.tests\bin\release\net10.0\sportsstore.tests.dll" id="d806e124-c089-bf0c-69c7-d08a9a2fb936">
+      <Execution id="b86ea98e-2b97-4ab3-9350-8bb7cf5ffbc0" />
+      <TestMethod codeBase="C:\Users\yinka\RiderProjects\fs-lab-assignment-sportstore-71757\11 - SportsStore - 5\Beginning of Chapter\SportsSln\SportsStore.Tests\bin\Release\net10.0\SportsStore.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SportsStore.Tests.CartTests" name="Can_Clear_Contents" />
+    </UnitTest>
+    <UnitTest name="SportsStore.Tests.HomeControllerTests.Can_Paginate" storage="c:\users\yinka\riderprojects\fs-lab-assignment-sportstore-71757\11 - sportsstore - 5\beginning of chapter\sportssln\sportsstore.tests\bin\release\net10.0\sportsstore.tests.dll" id="16146c4f-1989-7fb7-6d00-e890de62ac14">
+      <Execution id="fd908f56-7d31-48ff-8268-982a6241fd97" />
+      <TestMethod codeBase="C:\Users\yinka\RiderProjects\fs-lab-assignment-sportstore-71757\11 - SportsStore - 5\Beginning of Chapter\SportsSln\SportsStore.Tests\bin\Release\net10.0\SportsStore.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SportsStore.Tests.HomeControllerTests" name="Can_Paginate" />
+    </UnitTest>
+    <UnitTest name="SportsStore.Tests.CartTests.Can_Remove_Line" storage="c:\users\yinka\riderprojects\fs-lab-assignment-sportstore-71757\11 - sportsstore - 5\beginning of chapter\sportssln\sportsstore.tests\bin\release\net10.0\sportsstore.tests.dll" id="7fe9a767-c7a9-da4e-3fb9-30bc69e0142f">
+      <Execution id="11500cd0-267a-4cd0-9dc2-a0d138c9f655" />
+      <TestMethod codeBase="C:\Users\yinka\RiderProjects\fs-lab-assignment-sportstore-71757\11 - SportsStore - 5\Beginning of Chapter\SportsSln\SportsStore.Tests\bin\Release\net10.0\SportsStore.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner3/netcore/" className="SportsStore.Tests.CartTests" name="Can_Remove_Line" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="463c213b-bc8f-4c8d-3f03-f6c84f1ba9ea" executionId="ff4be9b2-6727-4924-b34f-2373d3f88d59" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7ba9e185-12cb-d99a-9ea1-45bb2115a5fa" executionId="b739eeab-1433-43cf-9d63-8cac071a06f9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b39b6c2a-774e-7493-ee65-0aaa09431e5d" executionId="94d57df6-b7e5-4197-b3c7-1232f32ac642" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="633f6029-062b-e38b-d7d9-69dc3374aa36" executionId="d4e8db36-18e5-436f-920c-b59667ef7e5b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="888de4fa-7580-b7bd-e1a7-61eb3a6f19f4" executionId="c9c824cb-5118-4d6c-8b03-58df5d7dbcdc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="caa4a50a-b808-cd22-ff62-05ad60263d71" executionId="72439864-5782-4335-910b-c25ab2339b98" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7fe9a767-c7a9-da4e-3fb9-30bc69e0142f" executionId="11500cd0-267a-4cd0-9dc2-a0d138c9f655" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d806e124-c089-bf0c-69c7-d08a9a2fb936" executionId="b86ea98e-2b97-4ab3-9350-8bb7cf5ffbc0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="16146c4f-1989-7fb7-6d00-e890de62ac14" executionId="fd908f56-7d31-48ff-8268-982a6241fd97" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d4d56918-3316-6e6d-84d2-1a7a421b63ba" executionId="c050d98f-e6f8-4af6-bbd7-dcf1eb69f152" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="23eca694-f3e8-cb68-a264-5fd501f64c3e" executionId="1c822675-2354-4c19-9eb9-f8397d712f4e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9bba611e-a08f-0c04-c1d3-202243e4358e" executionId="b8fc4776-df19-4f12-8f22-0d4e2384c569" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3eec47fc-df5c-bd94-9123-7315973387c7" executionId="8194d162-7c80-4c26-9434-cfce152ae4bd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="269fcb27-4c46-43b5-5090-02311cef1e29" executionId="a32e2fd1-bfbe-4108-8a6f-e60648e62ac6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b8081a28-a2b5-3c63-d39e-453bbe530d4c" executionId="f1027f40-2f87-4328-8f25-30124bcd3462" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="59f2878d-9ff7-2aab-40df-d409445d4121" executionId="091ba2b2-d615-4363-9237-81ec3f1f6431" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a26937d7-a04b-177a-a91a-07c40d5006e7" executionId="d4843cda-5259-497c-a517-4f6fb69ff3db" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e042c721-696d-e76d-2c09-a2821e58c361" executionId="789ff3c3-ece6-4dec-ad3f-67db5b254219" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="18" executed="18" passed="18" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.01] xUnit.net VSTest Adapter v3.1.5+1b188a7b0a (64-bit .NET 10.0.3)&#xD;
+[xUnit.net 00:00:02.63]   Discovering: SportsStore.Tests&#xD;
+[xUnit.net 00:00:02.88]   Discovered:  SportsStore.Tests&#xD;
+[xUnit.net 00:00:03.04]   Starting:    SportsStore.Tests&#xD;
+[xUnit.net 00:00:09.62]   Finished:    SportsStore.Tests&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>
